@@ -1,0 +1,40 @@
+Actarian Notes 09/17/2019
+
+Sophie Webster and Lin Zhu
+
+Go to Github
+click on repositories
+new repo
+initialize with a read me file
+how to connect to computer?
+click on clone or download
+new project
+version control
+paste
+onward!
+
+Let it be known: Preceptor's favorite premiere soccer team is Arsenal
+
+command-shift-k is knit
+
+Git commit.
+Always leave a message
+Then hit push to ensure that it
+
+
+First quest: find average age by party
+
+congress_age %>%
+mutate(year = format(termstart, "%Y")) %>%
+filter(party %in% c("R", "D")) %>%
+group_by(year, party)
+summarize(avg_age = mean(age))
+
+
+mutate creates new columns
+summarize decreases the number of rows
+
+click on file, project
+don't put .Rproj on github it's private!
+.gitignore is what you're saying git should ignore
+put .Rproj in there. you're not going to check it in!
