@@ -54,4 +54,17 @@ How can we estimate the causal effect of Crimson Cash on employee satisfaction?
 
 Average across control and treatment and find the difference to estimate causal effect.
 
+Milestone 2 is due on Friday! 
 
+to get a date file into your "files" workspace, download it and move it around:
+mv file-pathway place-you-want-it
+Or, to expedite things, just use a "." to say "move this thing here!"
+
+this may end up looking like:
+mv ~/Downloads/class_enrollment_summary_by_term_9.17.19.xlsx .
+
+say "<-" as "get"
+
+library(readxl) 
+read_xlsx is the command to use
+you can couple this with "skip = x" to remove that number of rows from the top in the event that they're empty
