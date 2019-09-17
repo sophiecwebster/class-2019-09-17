@@ -21,7 +21,7 @@ mutate(year = format(termstart, "%Y")) %>%
 filter(party %in% c("R", "D")) %>%
 group_by(year, party) %>%
 summarize(avg_age = mean(age)) %>%
-   ggplot(aes(x = year, y = avg_age, group = party, color = party)) + geom_line() + ggtitle("Average Age of Dems and Republicans each Year") + labs(subtitle = "At Start of Term, 1947-2013", source = "539 R Package") + labs(y = "Average Age") + labs(x = "Year of Termstart") + expand_limits(y = c(48,60)) + scale_x_discrete() + theme_fivethirtyeight() + scale_color_fivethirtyeight()
+   ggplot(aes(x = year, y = avg_age, group = party, color = party)) + geom_line() + ggtitle("Average Age of Dems and Republicans each Year") + labs(subtitle = "At Start of Term, 1947-2013", source = "538 R Package") + labs(y = "Average Age") + labs(x = "Year of Termstart") + expand_limits(y = c(48,60)) + scale_x_discrete() + theme_fivethirtyeight() + scale_color_fivethirtyeight()
 ```
 
 ```{r}
