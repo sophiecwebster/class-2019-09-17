@@ -38,3 +38,20 @@ click on file, project
 don't put .Rproj on github it's private!
 .gitignore is what you're saying git should ignore
 put .Rproj in there. you're not going to check it in!
+
+Rubin Causal Model: A Monologue
+Harvard measures employee satisfaction from 1 to 10 (low to high)
+Wants to increase satisfaction -- give more CC
+
+Units, outcomes
+Treatment = new thing
+Control = base case
+Causal Effect of the treatment can be quantified
+
+Can only see one state of the world is a drawback. You either get the CC or you don't. So, add more people to survey.
+
+How can we estimate the causal effect of Crimson Cash on employee satisfaction?
+
+Average across control and treatment and find the difference to estimate causal effect.
+
+
